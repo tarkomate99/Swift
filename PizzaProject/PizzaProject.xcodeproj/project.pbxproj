@@ -12,6 +12,7 @@
 		3FD8B02327E9CC6700546A65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD8B02127E9CC6700546A65 /* Main.storyboard */; };
 		3FD8B02527E9CC6900546A65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD8B02427E9CC6900546A65 /* Assets.xcassets */; };
 		3FD8B02827E9CC6900546A65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD8B02627E9CC6900546A65 /* LaunchScreen.storyboard */; };
+		3FD8B03027E9D05C00546A65 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8B02F27E9D05C00546A65 /* Pizza.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3FD8B02427E9CC6900546A65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FD8B02727E9CC6900546A65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FD8B02927E9CC6900546A65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FD8B02F27E9D05C00546A65 /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				3FD8B02427E9CC6900546A65 /* Assets.xcassets */,
 				3FD8B02627E9CC6900546A65 /* LaunchScreen.storyboard */,
 				3FD8B02927E9CC6900546A65 /* Info.plist */,
+				3FD8B02F27E9D05C00546A65 /* Pizza.swift */,
 			);
 			path = PizzaProject;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			files = (
 				3FD8B02027E9CC6700546A65 /* ViewController.swift in Sources */,
 				3FD8B01E27E9CC6700546A65 /* AppDelegate.swift in Sources */,
+				3FD8B03027E9D05C00546A65 /* Pizza.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
