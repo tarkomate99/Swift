@@ -26,11 +26,15 @@ class ViewController: UIViewController {
     
     
     @IBAction func changeType(_ sender: UIButton) {
-        
+
          pizza.type = sender.currentTitle!
-        
+
     }
     
+//    @IBAction func changeType(_ sender: UISegmentedControl) {
+//        let pizza_type = sender.selectedSegmentIndex.
+//        pizza.type = pizza_type
+//    }
     
     @IBAction func calculate(_ sender: UIButton) {
         changeLabel()
