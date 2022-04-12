@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  MoreMVCs
 //
-//  Created by Student on 2021. 10. 25..
-//  Copyright © 2021. vemwaat. All rights reserved.
+//  Created by Student on 2020. 10. 27..
+//  Copyright © 2020. vetrabm. All rights reserved.
 //
 
 import UIKit
