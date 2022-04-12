@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b0o-Q8-xXc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Épületek-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MenuViewController" customModule="MoreMVCs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="blk-Q2-ql1">
+                                <rect key="frame" x="139" y="341.5" width="96" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIH-eq-PqN">
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="30"/>
+                                        <state key="normal" title="Bólyai épület"/>
+                                        <connections>
+                                            <segue destination="Svd-Z1-wqe" kind="show" identifier="bolyai" id="opj-VU-3kA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojL-eL-8Yr">
+                                        <rect key="frame" x="0.0" y="35" width="96" height="30"/>
+                                        <state key="normal" title="Irinyi épület"/>
+                                        <connections>
+                                            <segue destination="Svd-Z1-wqe" kind="show" identifier="irinyi" id="MVL-BS-4G2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZg-0A-bLr">
+                                        <rect key="frame" x="0.0" y="70" width="96" height="30"/>
+                                        <state key="normal" title="Rektori épület"/>
+                                        <connections>
+                                            <segue destination="Svd-Z1-wqe" kind="show" identifier="rektori" id="0tx-Yg-W7X"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="blk-Q2-ql1" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="87T-CA-xcN"/>
+                            <constraint firstItem="blk-Q2-ql1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CEN-pu-nME"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Épületek" id="U4Q-sJ-ddz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1608.8" y="102.99850074962519"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="5s5-RK-0z6">
+            <objects>
+                <viewController id="Svd-Z1-wqe" customClass="ImageViewController" customModule="MoreMVCs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LIr-AO-sEq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="58B-fc-yv7">
+                                <rect key="frame" x="16" y="116" width="343" height="531"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="58B-fc-yv7" firstAttribute="top" secondItem="3v5-vs-Gze" secondAttribute="top" id="HUT-Rl-VvZ"/>
+                            <constraint firstItem="58B-fc-yv7" firstAttribute="leading" secondItem="3v5-vs-Gze" secondAttribute="leading" constant="16" id="htp-s6-Pra"/>
+                            <constraint firstItem="3v5-vs-Gze" firstAttribute="trailing" secondItem="58B-fc-yv7" secondAttribute="trailing" constant="16" id="k54-ru-329"/>
+                            <constraint firstItem="3v5-vs-Gze" firstAttribute="bottom" secondItem="58B-fc-yv7" secondAttribute="bottom" constant="20" id="qh5-hK-57P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3v5-vs-Gze"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="58B-fc-yv7" id="Esw-na-But"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9g3-tB-npM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2439" y="103"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cco-yF-VP4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b0o-Q8-xXc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="MkG-Lm-ghL">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FUY-Qt-NYo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q3P-JV-VXN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="103"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="opj-VU-3kA"/>
+    </inferredMetricsTieBreakers>
+</document>

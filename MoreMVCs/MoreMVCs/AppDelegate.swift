@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  MoreMVCs
 //
-//  Created by Student on 2020. 10. 27..
-//  Copyright © 2020. vetrabm. All rights reserved.
+//  Created by Student on 2019. 10. 21..
+//  Copyright © 2019. vetrabm. All rights reserved.
 //
 
 import UIKit
